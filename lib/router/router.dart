@@ -12,15 +12,14 @@ class MyRouter {
       case opportunitiesRoute:
         return MaterialPageRoute(builder: (_) => OpportunitiesPage());
 
-        case homeRoute:
-        return MaterialPageRoute(builder: (_) => HomePage());
+      case homeRoute:
+        return MaterialPageRoute(builder: (_) => HomePage()); 
 
-        case signInRoute:
+      case signInRoute:
         return MaterialPageRoute(builder: (_) => SignInPage());
 
-        case signUpRoute:
+      case signUpRoute:
         return MaterialPageRoute(builder: (_) => SignUpPage());
-
 
       default:
         return MaterialPageRoute(builder: (_) => NotFoundPage());

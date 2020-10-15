@@ -60,29 +60,28 @@ class _HomePageState extends State<HomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         
-        items: [
-          BottomNavigationBarItem(
-            label: 'Opportunities',
-            icon: Icon(Icons.home),
-          ),
-          BottomNavigationBarItem(
-            label: 'Forum',
-            icon: Icon(Icons.chat),
-          ),
-          BottomNavigationBarItem(
-            label: 'Favorites',
-            icon: Icon(Icons.favorite),
-          ),
-          BottomNavigationBarItem(
-            label: 'Account',
-            icon: Icon(Icons.person),
-          ),],
-
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blue,
+        selectedItemColor: Theme.of(context).primaryColor,
         type: BottomNavigationBarType.fixed,
         onTap: _onItemTapped,
 
+        items: [
+          BottomNavigationBarItem(
+            //label: 'Opportunities',
+            icon: Icon(Icons.home),
+          ),
+          BottomNavigationBarItem(
+            //label: 'Forum',
+            icon: Icon(Icons.chat),
+          ),
+          BottomNavigationBarItem(
+            //label: 'Favorites',
+            icon: Icon(Icons.favorite),
+          ),
+          BottomNavigationBarItem(
+            //label: 'Account',
+            icon: Icon(Icons.person),
+          ),],
       ),
     );
   }
